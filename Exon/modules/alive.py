@@ -40,12 +40,12 @@ from Exon import OWNER_USERNAME, SUPPORT_CHAT, UPDATES_CHANNEL, pgram
 
 ASAU = [
     [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            text="Aᴅᴅ mᴇ Tɴ Yᴏᴜʀ Gʀᴏᴜᴘ",
             url=f"https://t.me/{fuck}?startgroup=true",
         ),
     ],
@@ -68,14 +68,16 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.1)
     await m.reply_photo(
         random.choice(PHOTO),
-        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ {BOT_NAME}**
-     ▱▱▱▱▱▱▱▱▱▱▱▱
-» **ᴍʏ ᴏᴡɴᴇʀ :** [𝐀ʙɪsʜɴᴏɪ](https://t.me/{OWNER_USERNAME})
-» **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
-» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tver}`
-» **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
-» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{version_info[0]}.{version_info[1]}.{version_info[2]}`
-⍟ **ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ :** `1.0`
-     ▱▱▱▱▱▱▱▱▱▱▱▱""",
+        caption=f"""**Hᴇʏ, I Aᴍ {BOT_NAME}**   
+┏━━━━━━━━━━━━━━━━
+┣ ₪ 
+┣ ₪» Mʏ Oᴡɴᴇʀ : [Cʀᴇᴀᴛᴏʀ](https://t.me/{OWNER_USERNAME})
+┣ ₪» Lɪʙʀᴀʀʏ Vᴇʀsɪᴏɴ : {lver}
+┣ ₪» Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ : {tver}
+┣ ₪» Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ : {pver}
+┣ ₪» Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ : {version_info[0]}.{version_info[1]}.{version_info[2]}
+┣ ₪⍟ Bᴏᴛ Vᴇʀꜱɪᴏɴ : 1.0
+┣ ₪ 
+┗━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(ASAU),
     )
